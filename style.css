@@ -1,5 +1,362 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&display=swap");
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  color: hsl(236, 100%, 87%);
+  background-color: hsl(226, 43%, 10%);
+}
+
+main {
+  width: 80%;
+  margin: 4em auto;
+  max-width: 25rem;
+  min-width: 18rem;
+}
+
+.main-card {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+}
+
+.profile img {
+  width: 70px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.profile .name {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.name p {
+  font-size: 0.8em;
+  margin-bottom: 0.2rem;
+}
+
+.weekly {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  color: hsl(235, 45%, 61%);
+}
+
+li:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.img-container-work {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-work::after {
+  background-image: url(images/icon-work.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.reg-card-text {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 0.9rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.reg-card-text:hover {
+  background-color: #34397b;
+}
+.card-active {
+  background-color: #34397b;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  align-self: center;
+  cursor: pointer;
+}
+
+.top img:hover {
+  filter: brightness(0) invert(1);
+}
+
+.top h2,
+.bottom h2,
+h3 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.top h2 {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.bottom h2 {
+  font-size: 1.7em;
+}
+
+.bottom h3 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: hsl(236, 100%, 87%);
+}
+
+.top {
+  margin-bottom: 0.3rem;
+}
+
+.img-container-play {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-play::after {
+  background-image: url(images/icon-play.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.img-container-study {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-study::after {
+  background-image: url(images/icon-study.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.img-container-exercise {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-exercise::after {
+  background-image: url(images/icon-exercise.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.img-container-social {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-social::after {
+  background-image: url(images/icon-social.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+.img-container-self {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.img-container-self::after {
+  background-image: url(images/icon-self-care.svg);
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 92% 20%;
+}
+
+.self {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 1300px) {
+  .main-card {
+    grid-area: main;
+  }
+
+  .work {
+    grid-area: work;
+  }
+
+  .play {
+    grid-area: play;
+  }
+
+  .study {
+    grid-area: study;
+  }
+
+  .exercise {
+    grid-area: exercise;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .self {
+    grid-area: self;
+  }
+
+  main {
+    place-content: center;
+
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "main work play study"
+      "main exercise social self ";
+    gap: 1.5rem;
+    box-sizing: border-box;
+    width: 80%;
+  }
+
+  .reg-card {
+    margin-top: 0;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .profile {
+    display: block;
+    align-items: left;
+    padding: 2rem;
+  }
+
+  .profile .name {
+    align-items: left;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+  }
+
+  .profile img {
+    width: 90px;
+    margin-bottom: 2.5rem;
+  }
+
+  .weekly {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0.8rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottom h2 {
+    font-size: 3em;
+    margin: 2rem 0 1rem 0;
+  }
 }
