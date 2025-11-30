@@ -21,6 +21,7 @@ main {
   margin: 4em auto;
   max-width: 25rem;
   min-width: 18rem;
+  padding-bottom: 4rem;
 }
 
 .main-card {
@@ -321,6 +322,9 @@ h3 {
 
   body {
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .profile {
