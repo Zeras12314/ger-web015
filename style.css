@@ -302,7 +302,7 @@ h3 {
 
   main {
     place-content: center;
-
+    padding-bottom: 0;
     width: 100%;
     max-width: 100%;
     display: grid;
